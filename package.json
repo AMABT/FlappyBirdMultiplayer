@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server for paper airplane",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/index.js",
+    "start": "node server.js"
+  },
+  "author": "Alecu Marian-Alexandru",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket-tester": "^1.2.1",
+    "socket.io": "^2.0.1"
+  }
+}

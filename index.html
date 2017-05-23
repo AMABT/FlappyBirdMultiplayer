@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="src/phaser.js"></script>
+    <script src="src/Client.js"></script>
+    <script src="src/Boot.js"></script>
+    <script src="src/Preload.js"></script>
+    <script src="src/Airplane.js"></script>
+    <script src="src/Main.js"></script>
+    <style>
+        body {
+            margin: 0
+        }
+    </style>
+    <script>
+        (() => {
+            const game = new Phaser.Game(840, 480, Phaser.AUTO, '');
+            game.state.add("Boot", Boot);
+            game.state.add("Preload", Preload);
+            game.state.add("Main", Main);
+            game.state.start("Boot");
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
